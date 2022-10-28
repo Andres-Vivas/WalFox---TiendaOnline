@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wal Fox - Tienda Online</title>
+    
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    
+    <!--Box icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!--Navegation-->
+    <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+					<h1>WAL FOX <span>Reloj</span></h1>
+				</div>
+				<ul class="nav__list">
+					<span>
+						<i class="bx bxs-watch"></i>
+					</span>
+					<div class="carrito__icon">
+						<i class="bx bx-cart"></i>
+						<span class="item__total">0</span>
+					</div>
+				</ul>
+      </div>
+    </nav>
+
+  <!--Filter-->
+  <section class="filter">
+        <div class="grid">
+        <div class="div">
+            <label for="buscar"><span><i class="bx bx-search"></i></span></label>
+            <input type="text" id="buscar" placeholder="Buscar relojes...">
+        </div>
+        <div class="category">
+            <select id="category" onclick="categoryValue()">
+            <option value="">Marcas</option>
+            <option value="rolex">Rolex</option>
+            <option value="omega">Omega</option>
+            <option value="audemars">Audemars</option>
+            <option value="rolexDay">Rolex Day</option>
+            <option value="hublot">Hublot</option>
+            <option value="tag">Tag Heuer</option>
+            </select>
+        </div>
+        </div>
+  </section>    
+
+    <!--Productos-->
+    <section class="productos">
+      <div class="productos__center">
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/2846-alz5vjoi11mxlc54imf27mlj-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>Roles Datejust</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$101</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="1">Añadir carrito</button>
+              <a href="producto-detalles.html?id=1" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>OMEGA Speedmaster</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$104</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="2">Añadir carrito</button>
+              <a href="producto-detalles.html?id=2" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/1177-wugpfdlkkz5ie2od4y1w8rlm-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>AUDEMARS PIGUET</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$75</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="3">Añadir carrito</button>
+              <a href="producto-detalles.html?id=3" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/1065-ae2seivfjwbgqxgobd7rimxu-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>HUBLOT Big Bang</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$99</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="4">Añadir carrito</button>
+              <a href="producto-detalles.html?id=4" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/48-coj40rpfx8fwxs9h0nl1l5z5-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>ROLEX Day-Date</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$105</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="5">Añadir carrito</button>
+              <a href="producto-detalles.html?id=5" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/1023-knl4kmo66jmse324vzq1rit9-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>TAG HEUER Carrera Calibre</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$85</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="6">Añadir carrito</button>
+              <a href="producto-detalles.html?id=6" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/2889-i234z41cn7v0n4vanfhte4w4-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>Roles Datejust</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$60</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="7">Añadir carrito</button>
+              <a href="producto-detalles.html?id=7" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/277-q51jko3qp053cwsfydfnmp8r-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>OMEGA Speedmaster</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$35</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="8">Añadir carrito</button>
+              <a href="producto-detalles.html?id=8" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/2784-sol59z6xc26pvisg1s4yyhz7-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>AUDEMARS PIGUET</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$799</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="9">Añadir carrito</button>
+              <a href="producto-detalles.html?id=9" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/1060-60mnke18crk8dtva1dday8aq-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>HUBLOT Big Bang</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$101</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="10">Añadir carrito</button>
+              <a href="producto-detalles.html?id=10" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/2789-kz9cslhfzhl5hluyhyik13vh-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>ROLEX Day-Date</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$650</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="11">Añadir carrito</button>
+              <a href="producto-detalles.html?id=11" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/1024-kun413lxk7kb6xba9sow5f81-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>TAG HEUER Carrera Calibre</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$65</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="12">Añadir carrito</button>
+              <a href="producto-detalles.html?id=12" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/2827-syc8dandfne5fr49dsnu9oai-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>Roles Datejust</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$101</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="13">Añadir carrito</button>
+              <a href="producto-detalles.html?id=13" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/71-js248idvdav3retnmx2uc6wx-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>OMEGA Speedmaster</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$104</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="14">Añadir carrito</button>
+              <a href="producto-detalles.html?id=14" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/1176-hs3tqa0p4c96tsxn2cn2uo6w-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>AUDEMARS PIGUET</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$75</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="15">Añadir carrito</button>
+              <a href="producto-detalles.html?id=15" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/1058-1jormktv8artxf3enlapuh13-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>HUBLOT Big Bang</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$99</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="16">Añadir carrito</button>
+              <a href="producto-detalles.html?id=16" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/2884-5ef4thk0sttcydmk5692nply-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>ROLEX Day-Date</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$105</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="17">Añadir carrito</button>
+              <a href="producto-detalles.html?id=17" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/1024-kun413lxk7kb6xba9sow5f81-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>TAG HEUER Carrera Calibre</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$85</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="18">Añadir carrito</button>
+              <a href="producto-detalles.html?id=18" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/53-qr7rjp3uwl4jco6w9zezewr6-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>Roles Datejust</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$60</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="19">Añadir carrito</button>
+              <a href="producto-detalles.html?id=19" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/242-uk37he1f5vgdtk9unr5570ct-Original.png?auto=compress&amp;h=3055" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>OMEGA Speedmaster</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$35</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="20">Añadir carrito</button>
+              <a href="producto-detalles.html?id=20" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/118-6lbsu9lmivq8w0y0nqrk5j45-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>AUDEMARS PIGUET</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$99</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="21">Añadir carrito</button>
+              <a href="producto-detalles.html?id=21" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/1060-60mnke18crk8dtva1dday8aq-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>HUBLOT Big Bang</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$101</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="22">Añadir carrito</button>
+              <a href="producto-detalles.html?id=22" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/954-oel0a5omxgsfsc717gx0p1na-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>ROLEX Day-Date</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$65</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="23">Añadir carrito</button>
+              <a href="producto-detalles.html?id=23" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				
+			<div class="producto">
+			<div class="image__container">
+			<img src="https://cdn4.chrono24.com/images/topmodels/2848-rrxe8hk918f7plrrfgzbxt65-Original.png?auto=compress&amp;h=305" alt="">
+		</div>
+          <div class="producto__footer">
+            <h1>TAG HEUER Carrera Calibre</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$65</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <button class="btn addToCart" data-id="24">Añadir carrito</button>
+              <a href="producto-detalles.html?id=24" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+				</div>
+    </section>
+
+    <!--Carrito-->
+    
+    <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Su Carrito</h1>
+
+        <div class="carrito__center">
+
+          <!-- <div class="carrito__item">
+
+            <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="reloj">
+            <div>
+              <h3>Relojes Originales </h3>
+              <p class="price">$122</p>
+            </div>
+            <div>
+              <span>
+                <i class="bx bxs-up-arrow"></i>
+              </span>
+              <p>1</p>
+              <span>
+                <i class="bx bxs-down-arrow"></i>
+              </span>
+            </div>
+            <div>
+              <span class="remove__item">
+                <i class="bx bx-trash"></i>
+              </span>
+            </div>
+
+            
+          </div> -->
+        </div>
+
+        <div class="carrito__footer">
+            <h3>Total: $ <span class="carrito__total">0</span></h3>
+            <button class="clear__carrito btn">remover carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/scripts.js"></script>
+  
+
+</body>
+</html>
